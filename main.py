@@ -22,7 +22,7 @@ mercado.adicionar_produto(produto5)
 print(mercado.nome)
 
 ##Mostra os produtos disponiveis, com valor e quantidade em estoque
-# mercado.listar_produtos()
+#mercado.listar_produtos()
 
 
 ##Mostra as movimentações do carrinho e total das "compras"
@@ -30,14 +30,7 @@ print(mercado.nome)
 carrinho = Carrinho(mercado)
 print(carrinho)
 # ##Adiciona o produto
-# carrinho.adicionar_produto(produto1,10)
-##carrinho.adicionar_produto(produto4,20)
-# ##Remove produto
-# carrinho.remover_produto(produto1,1)
-# carrinho.comprar_produto(1,1)
-# print(carrinho)
-
-# mercado.listar_produtos()
+carrinho.comprar_produto(2,2)
 
 while True:
     opcao = input("""

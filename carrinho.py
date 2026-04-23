@@ -37,7 +37,7 @@ class Carrinho:
             print(f"Adicionado {quantidade}x {produto.nome} ao carrinho")
         else:
             print("Não disponível")
-
+##Função para remover o produto do carrinho
     def remover_produto(self, id_produto, quantidade):
         if id_produto in self.itens:
             produto = self.mercado.buscar_produto(id_produto)
@@ -55,7 +55,7 @@ class Carrinho:
 
             else:
                 print("Quantidade maior que no carrinho.")
-
+##retorna o total do valor dos itens adicionados no carrinho
     def calcular_total(self):
         total = 0
         for id_produto, quantidade in self.itens.items():
