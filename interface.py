@@ -2,10 +2,6 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter.messagebox import showwarning
 
-import produto
-from carrinho import Carrinho
-from mercado import Mercado
-
 
 def criar_interface(mercado,carrinho):
     window = Tk()
@@ -60,11 +56,6 @@ def criar_interface(mercado,carrinho):
     window.mainloop()
 
 
-
-
-
-
-
 def checar_carrinho(carrinho, text):
     text.delete("1.0", END)
     text.insert(END, str(carrinho))
@@ -76,11 +67,6 @@ def click():
 
      else:
          messagebox.showwarning(title="Compra cancelada!", message="Você cancelou a compra!")
-
-
-
-
-
 
 def checar_produtos(mercado, text):
     text.delete("1.0", END)
@@ -107,4 +93,4 @@ def add_produto(carrinho, entry_id, entry_qtd, text):
             carrinho.comprar_produto(id, qtd)
             text.insert(END, str(carrinho))
 
-# def remover_produto(carrinho,)
+

@@ -55,6 +55,7 @@ class Carrinho:
 
             else:
                 return ("Quantidade maior que no carrinho.")
+
 ##retorna o total do valor dos itens adicionados no carrinho
 
     def calcular_total(self):
@@ -65,7 +66,6 @@ class Carrinho:
                total += "\n" +produto.preco * quantidade
         return total
 
-    ##def concluir_compra(self):
-        compra = self.calcular_total()
+
 
 
