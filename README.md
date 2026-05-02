@@ -19,12 +19,12 @@ Este projeto foi desenvolvido com foco em consolidar fundamentos essenciais de d
 
 ## 🚀 Funcionalidades
 
-* 📦 Visualização de produtos em estoque
-* ➕ Adição de produtos ao carrinho por ID
-* ➖ Remoção de produtos do carrinho
-* 🧾 Exibição do carrinho com cálculo automático do total
-* ⚠️ Validação de entrada (campos vazios e valores inválidos)
-* 🔄 Atualização dinâmica da interface
+*  Visualização de produtos em estoque
+*  Adição de produtos ao carrinho por ID
+*  Remoção de produtos do carrinho
+*  Exibição do carrinho com cálculo automático do total
+*  Validação de entrada (campos vazios e valores inválidos)
+*  Atualização dinâmica da interface
 
 ---
 
@@ -46,7 +46,7 @@ Essa separação facilita manutenção, escalabilidade e reutilização do códi
 
 A aplicação possui uma interface simples e funcional que permite interação direta com o sistema sem uso do terminal.
 
-📸 **Screenshot da aplicação:**
+ **Screenshot da aplicação:**
 
 Mostrar Estoque
 <img width="880" height="544" alt="SENNAMARKET" src="https://github.com/user-attachments/assets/d22351a8-d330-4c5d-8cd3-2c70f33f38ca" />
