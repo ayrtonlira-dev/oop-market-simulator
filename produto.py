@@ -7,7 +7,7 @@ class Produto:
         self.id = id
 
     def __str__(self):
-        return f" Produto - {self.nome}//Preço R$ - {self.preco},00// Estoque - {self.estoque}"
+        return f" Produto - {self.nome}|| Preço R$ - {self.preco},00 || Estoque - {self.estoque} || ID - {self.id}"
 
 
     def info(self):

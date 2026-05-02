@@ -4,7 +4,7 @@ class Carrinho:
         self.mercado = mercado
 
     def __str__(self):
-        texto = "Itens adicionados ao carrinho:\n"
+        texto = "\n"+ "Itens adicionados ao carrinho:\n"
         total = 0
 
         for id_produto, quantidade in self.itens.items():
@@ -22,8 +22,8 @@ class Carrinho:
         produto = self.mercado.buscar_produto(id_produto)
 
         if produto is None:
-            print("Produto não encontrado")
-            return
+
+            return ("Produto não encontrado")
 
         if produto.estoque >= quantidade:
             produto.estoque -= quantidade
@@ -34,9 +34,9 @@ class Carrinho:
             else:
                 self.itens[id_produto] = quantidade
 
-            print(f"Adicionado {quantidade}x {produto.nome} ao carrinho")
+            return (f"Adicionado {quantidade}x {produto.nome} ao carrinho")
         else:
-            print("Não disponível")
+            return ("não disponível")
 ##Função para remover o produto do carrinho
     def remover_produto(self, id_produto, quantidade):
         if id_produto in self.itens:
@@ -46,20 +46,26 @@ class Carrinho:
             if quantidade < qtd_carrinho:
                 self.itens[id_produto] -= quantidade
                 produto.aumentar_estoque(quantidade)
-                print(f"{quantidade}x {produto.nome} removido!")
+                return (f"{quantidade}x {produto.nome} removido!")
 
             elif quantidade == qtd_carrinho:
                 del self.itens[id_produto]
                 produto.aumentar_estoque(quantidade)
-                print(f"{produto.nome} removido do carrinho!")
+                return (f"{produto.nome} removido do carrinho!")
 
             else:
-                print("Quantidade maior que no carrinho.")
+                return ("Quantidade maior que no carrinho.")
 ##retorna o total do valor dos itens adicionados no carrinho
+
     def calcular_total(self):
         total = 0
         for id_produto, quantidade in self.itens.items():
             produto = self.mercado.buscar_produto(id_produto)
             if produto:
-                total += produto.preco * quantidade
+               total += "\n" +produto.preco * quantidade
         return total
+
+    ##def concluir_compra(self):
+        compra = self.calcular_total()
+
+
